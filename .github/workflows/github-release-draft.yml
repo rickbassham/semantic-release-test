@@ -17,12 +17,12 @@ jobs:
         id: get_notes
         run: |
           export NOTES=`git show -1 --no-notes --no-patch | tail +7`
-          echo echo ::set-output name=NOTES::${NOTES}
+          echo ::set-output name=NOTES::${NOTES}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
