@@ -1,0 +1,18 @@
+name: build
+
+on:
+  release:
+    types: [unpublished]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Get tag version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create tar.gz
+      - run: |
+          echo ${{ steps.get_version.outputs.VERSION }}
