@@ -16,7 +16,10 @@ jobs:
       - name: Get Notes
         id: get_notes
         run: |
-          export NOTES=`git show -1 --no-notes --no-patch | tail +7`
+          NOTES=`git show -1 --no-notes --no-patch | tail +7`
+          NOTES="${NOTES//'%'/'%25'}"
+          NOTES="${NOTES//$'\n'/'%0A'}"
+          NOTES="${NOTES//$'\r'/'%0D'}"
           echo ::set-output name=NOTES::${NOTES}
       - name: Create Release
         id: create_release
