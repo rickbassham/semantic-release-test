@@ -1,3 +1,10 @@
+## [1.0.18](https://github.com/rickbassham/semantic-release-test/compare/v1.0.17...v1.0.18) (2021-01-10)
+
+
+### Bug Fixes
+
+* set the artifact file name once ([7ca978f](https://github.com/rickbassham/semantic-release-test/commit/7ca978f990c6c1a32d41faae91bc6695d4565860))
+
 ## [1.0.17](https://github.com/rickbassham/semantic-release-test/compare/v1.0.16...v1.0.17) (2021-01-10)
 
 
