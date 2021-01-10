@@ -1,3 +1,10 @@
+## [1.0.20](https://github.com/rickbassham/semantic-release-test/compare/v1.0.19...v1.0.20) (2021-01-10)
+
+
+### Bug Fixes
+
+* that directory doesn't exist ([2db5189](https://github.com/rickbassham/semantic-release-test/commit/2db51898714305ea3b2803cfcbe61a1e019db6f8))
+
 ## [1.0.19](https://github.com/rickbassham/semantic-release-test/compare/v1.0.18...v1.0.19) (2021-01-10)
 
 
