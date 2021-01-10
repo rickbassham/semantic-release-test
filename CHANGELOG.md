@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/rickbassham/semantic-release-test/compare/v1.3.0...v1.3.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* syntax error ([45aec9a](https://github.com/rickbassham/semantic-release-test/commit/45aec9aa9600537a6736b7f543dc72904253b1b8))
+
 # [1.3.0](https://github.com/rickbassham/semantic-release-test/compare/v1.2.1...v1.3.0) (2021-01-10)
 
 
