@@ -1,3 +1,10 @@
+## [1.0.14](https://github.com/rickbassham/semantic-release-test/compare/v1.0.13...v1.0.14) (2021-01-10)
+
+
+### Bug Fixes
+
+* rename some things also let's test some "quotes" ([9af4d3e](https://github.com/rickbassham/semantic-release-test/commit/9af4d3e612a074ef25153b9a0e2d6edea9538b94))
+
 ## [1.0.13](https://github.com/rickbassham/semantic-release-test/compare/v1.0.12...v1.0.13) (2021-01-10)
 
 
