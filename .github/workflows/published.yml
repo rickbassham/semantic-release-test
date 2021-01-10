@@ -17,5 +17,5 @@ jobs:
         with:
           persist-credentials: false
       - name: Example
-      - run: |
+        run: |
           echo "Version ${{ steps.get_version.outputs.VERSION }} was published."
