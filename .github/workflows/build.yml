@@ -14,5 +14,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Create tar.gz
-      - run: |
+        run: |
           echo ${{ steps.get_version.outputs.VERSION }}
