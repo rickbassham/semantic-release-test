@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/rickbassham/semantic-release-test/compare/v1.3.4...v1.3.5) (2021-01-10)
+
+
+### Bug Fixes
+
+* and more debugging ([6f29c81](https://github.com/rickbassham/semantic-release-test/commit/6f29c813930ba38e1816c08116b737794fad2ca2))
+
 ## [1.3.4](https://github.com/rickbassham/semantic-release-test/compare/v1.3.3...v1.3.4) (2021-01-10)
 
 
