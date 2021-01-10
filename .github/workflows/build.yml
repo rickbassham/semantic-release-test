@@ -6,6 +6,9 @@ on:
 
 jobs:
   build:
+    strategy:
+      matrix:
+        os: ["focal", "groovy"]
     runs-on: ubuntu-20.04
     steps:
       - name: Get tag version
@@ -16,7 +19,7 @@ jobs:
       - name: Set artifact file name
         id: file_name
         run: |
-          echo ::set-output name=ARTIFACT_FILE_NAME::semantic-release-test_v${{ steps.get_version.outputs.VERSION }}.tar.gz
+          echo ::set-output name=ARTIFACT_FILE_NAME::semantic-release-test_v${{ steps.get_version.outputs.VERSION }}_${{ matrix.os }}.tar.gz
       - name: Checkout
         uses: actions/checkout@v2
         with:
@@ -33,6 +36,18 @@ jobs:
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
         with:
-          name: semantic-release-test
+          name: semantic-release-test_${{ matrix.os }}
           path: ${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}
           retention-days: 1
+  upload-release-assets:
+    runs-on: ubuntu-20.04
+    needs: [build]
+    steps:
+      - name: Get tag version
+        id: get_version
+        run: |
+          GITHUB_REF=${{ github.event.client_payload.ref }}
+          echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+      - uses: actions/download-artifact@v2
+      - name: Display structure of downloaded files
+        run: ls -R
