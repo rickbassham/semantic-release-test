@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/rickbassham/semantic-release-test/compare/v1.0.3...v1.0.4) (2021-01-10)
+
+
+### Bug Fixes
+
+* gotta do a checkout before a log ([5e3869f](https://github.com/rickbassham/semantic-release-test/commit/5e3869fe47c070de0d3bfa58f8d1d206720c9ebc))
+
 ## [1.0.3](https://github.com/rickbassham/semantic-release-test/compare/v1.0.2...v1.0.3) (2021-01-10)
 
 
