@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/rickbassham/semantic-release-test/compare/v1.0.4...v1.0.5) (2021-01-10)
+
+
+### Bug Fixes
+
+* moar fixes ([ac120c8](https://github.com/rickbassham/semantic-release-test/commit/ac120c896c722ee0d005723b8a85f774c05a4483))
+
 ## [1.0.4](https://github.com/rickbassham/semantic-release-test/compare/v1.0.3...v1.0.4) (2021-01-10)
 
 
