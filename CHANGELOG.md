@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/rickbassham/semantic-release-test/compare/v1.1.0...v1.1.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* start reducing permissions ([f4a20af](https://github.com/rickbassham/semantic-release-test/commit/f4a20af6aef30f32e1d73a98b0594fbf0476e562))
+
 # [1.1.0](https://github.com/rickbassham/semantic-release-test/compare/v1.0.21...v1.1.0) (2021-01-10)
 
 
