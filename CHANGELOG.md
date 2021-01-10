@@ -1,3 +1,10 @@
+## [1.0.21](https://github.com/rickbassham/semantic-release-test/compare/v1.0.20...v1.0.21) (2021-01-10)
+
+
+### Bug Fixes
+
+* there is no spoon ([e14a7d2](https://github.com/rickbassham/semantic-release-test/commit/e14a7d279ba45ece3c51a5853c1f45c6001ba937))
+
 ## [1.0.20](https://github.com/rickbassham/semantic-release-test/compare/v1.0.19...v1.0.20) (2021-01-10)
 
 
