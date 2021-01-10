@@ -26,11 +26,10 @@ jobs:
         run: |
           echo "${{ steps.get_version.outputs.VERSION }}"
           echo "${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}"
-          echo "${{ github.event.client_payload.release.id }}"
           echo "${{ github.event.client_payload.release.upload_url }}"
-          echo "${{ github.event.client_payload.release.html_url }}"
 
-          tar --exclude="${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" -czf "${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" .
+          touch "${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}"
+          tar --exclude="${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" --exclude='.[^/]*' -czf "artifacts/${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" .
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
         with:
