@@ -37,7 +37,7 @@ jobs:
           echo "${ASSETS}" |
               while IFS=$'\t' read -r id name; do
                 wget -q --auth-no-challenge --header="Accept:application/octet-stream" -O "${name}" \
-                  -i "https://${GITHUB_TOKEN}:@api.github.com/repos/rickbassham/semantic-release-test/releases/assets/${id}"
+                  "https://${GITHUB_TOKEN}:@api.github.com/repos/rickbassham/semantic-release-test/releases/assets/${id}"
               done
 
           ls -al
