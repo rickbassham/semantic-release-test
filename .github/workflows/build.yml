@@ -21,3 +21,6 @@ jobs:
       - name: Create tar.gz
         run: |
           echo ${{ steps.get_version.outputs.VERSION }}
+          echo ${{ github.event.client_payload.release.id }}
+          echo ${{ github.event.client_payload.release.upload_url }}
+          echo ${{ github.event.client_payload.release.html_url }}
