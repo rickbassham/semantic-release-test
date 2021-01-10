@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/rickbassham/semantic-release-test/compare/v1.0.5...v1.0.6) (2021-01-10)
+
+
+### Bug Fixes
+
+* escape multiline notes ([f2c49bf](https://github.com/rickbassham/semantic-release-test/commit/f2c49bf753b4eeefc78df7a43e30fa27fc7ca6cb))
+
 ## [1.0.5](https://github.com/rickbassham/semantic-release-test/compare/v1.0.4...v1.0.5) (2021-01-10)
 
 
