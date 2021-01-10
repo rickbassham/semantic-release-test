@@ -34,3 +34,9 @@ jobs:
           release_name: semantic-release-test ${{ github.ref }}
           draft: true
           body: ${{ steps.get_notes.outputs.NOTES }}
+      - name: Dispatch build-trigger
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          event-type: build-trigger
+          client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
