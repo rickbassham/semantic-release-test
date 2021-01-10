@@ -16,8 +16,6 @@ jobs:
       - name: Get Notes
         id: get_notes
         run: |
-          git show -1 --no-notes --no-patch | tail +9 | sed -e 's/^[[:space:]]*//'
-
           NOTES=$(git show -1 --no-notes --no-patch | tail +9 | sed -e 's/^[[:space:]]*//')
 
           echo "${NOTES}"
@@ -26,9 +24,6 @@ jobs:
           NOTES="${NOTES//$'\n'/'%0A'}"
           NOTES="${NOTES//$'\r'/'%0D'}"
           echo ::set-output name=NOTES::"${NOTES}"
-      - name: Test Notes
-        run: |
-          echo '${{ steps.get_notes.outputs.NOTES }}'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
