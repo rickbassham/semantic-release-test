@@ -1,3 +1,10 @@
+## [1.0.19](https://github.com/rickbassham/semantic-release-test/compare/v1.0.18...v1.0.19) (2021-01-10)
+
+
+### Bug Fixes
+
+* tar syntax ([392c428](https://github.com/rickbassham/semantic-release-test/commit/392c4280f7fae35c44225918f75704dd95dac4ec))
+
 ## [1.0.18](https://github.com/rickbassham/semantic-release-test/compare/v1.0.17...v1.0.18) (2021-01-10)
 
 
