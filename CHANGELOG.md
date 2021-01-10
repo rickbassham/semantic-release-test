@@ -1,3 +1,10 @@
+## [1.0.12](https://github.com/rickbassham/semantic-release-test/compare/v1.0.11...v1.0.12) (2021-01-10)
+
+
+### Bug Fixes
+
+* let's trim some whitespace and add a "quote" to test ([f213d48](https://github.com/rickbassham/semantic-release-test/commit/f213d4869c47cefc0dcff0401333a773a5d209ac))
+
 ## [1.0.11](https://github.com/rickbassham/semantic-release-test/compare/v1.0.10...v1.0.11) (2021-01-10)
 
 
