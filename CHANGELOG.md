@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/rickbassham/semantic-release-test/compare/v1.2.0...v1.2.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* cleanup draft releases ([9d6957a](https://github.com/rickbassham/semantic-release-test/commit/9d6957a7db3eaab2faaf2cc2c4d2604c2b9b335d))
+
 # [1.2.0](https://github.com/rickbassham/semantic-release-test/compare/v1.1.2...v1.2.0) (2021-01-10)
 
 
