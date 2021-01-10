@@ -1,4 +1,4 @@
-name: build
+name: Github Release Draft
 
 on:
   push:
@@ -9,6 +9,11 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
+      - name: Get Notes
+        id: get_notes
+        run: |
+          export NOTES=`git show -1 --no-notes --no-patch | tail +7`
+          echo echo ::set-output name=NOTES::${NOTES}
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -18,3 +23,4 @@ jobs:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
           draft: true
+          body: ${{ steps.get_notes.outputs.NOTES }}
