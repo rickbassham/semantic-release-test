@@ -1,3 +1,10 @@
+## [1.0.17](https://github.com/rickbassham/semantic-release-test/compare/v1.0.16...v1.0.17) (2021-01-10)
+
+
+### Bug Fixes
+
+* create and upload an artifact ([41c6e72](https://github.com/rickbassham/semantic-release-test/commit/41c6e7203384396c5da5e7d8473ff6b535cd40f9))
+
 ## [1.0.16](https://github.com/rickbassham/semantic-release-test/compare/v1.0.15...v1.0.16) (2021-01-10)
 
 
