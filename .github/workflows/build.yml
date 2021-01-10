@@ -39,6 +39,7 @@ jobs:
           name: semantic-release-test_${{ matrix.os }}
           path: ${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}
           retention-days: 1
+
   upload-release-assets:
     runs-on: ubuntu-20.04
     needs: [build]
@@ -61,3 +62,13 @@ jobs:
         with:
           upload_url: ${{ github.event.client_payload.release.upload_url }}
           targets: "*.tar.gz"
+
+  publish-release:
+    runs-on: ubuntu-20.04
+    needs: [upload-release-assets]
+    steps:
+      - uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          release_id: ${{ github.event.client_payload.release.id }}
