@@ -20,15 +20,15 @@ jobs:
 
           NOTES=$(git show -1 --no-notes --no-patch | tail +9)
 
-          echo $NOTES
+          echo "${NOTES}"
 
           NOTES="${NOTES//'%'/'%25'}"
           NOTES="${NOTES//$'\n'/'%0A'}"
           NOTES="${NOTES//$'\r'/'%0D'}"
-          echo ::set-output name=NOTES::${NOTES}
+          echo ::set-output name=NOTES::"${NOTES}"
       - name: Test Notes
         run: |
-          echo ${{ steps.get_notes.outputs.NOTES }}
+          echo '${{ steps.get_notes.outputs.NOTES }}'
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
