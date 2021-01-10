@@ -29,7 +29,7 @@ jobs:
           echo "${{ github.event.client_payload.release.upload_url }}"
 
           touch "${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}"
-          tar --exclude="${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" --exclude='.[^/]*' -czf "artifacts/${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" .
+          tar --exclude="${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" --exclude='.[^/]*' -czf "${{ steps.file_name.outputs.ARTIFACT_FILE_NAME }}" .
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v2
         with:
