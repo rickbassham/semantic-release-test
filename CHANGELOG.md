@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/rickbassham/semantic-release-test/compare/v1.0.0...v1.0.1) (2021-01-10)
+
+
+### Bug Fixes
+
+* don't use GITHUB_TOKEN since it won't trigger another workflow ([9c26298](https://github.com/rickbassham/semantic-release-test/commit/9c26298d45102d788d4573adae68dc50ab8ca8fd))
+
 # 1.0.0 (2021-01-10)
 
 
