@@ -1,3 +1,10 @@
+## [1.0.16](https://github.com/rickbassham/semantic-release-test/compare/v1.0.15...v1.0.16) (2021-01-10)
+
+
+### Bug Fixes
+
+* some more testing with triggers ([d5ac564](https://github.com/rickbassham/semantic-release-test/commit/d5ac5645820d90de747962236221659f0abb0bec))
+
 ## [1.0.15](https://github.com/rickbassham/semantic-release-test/compare/v1.0.14...v1.0.15) (2021-01-10)
 
 
