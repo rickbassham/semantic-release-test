@@ -16,9 +16,9 @@ jobs:
       - name: Get Notes
         id: get_notes
         run: |
-          git show -1 --no-notes --no-patch | tail +9
+          git show -1 --no-notes --no-patch | tail +9 | sed -e 's/^[[:space:]]*//'
 
-          NOTES=$(git show -1 --no-notes --no-patch | tail +9)
+          NOTES=$(git show -1 --no-notes --no-patch | tail +9 | sed -e 's/^[[:space:]]*//')
 
           echo "${NOTES}"
 
