@@ -20,7 +20,16 @@ jobs:
           ref: ${{ github.event.client_payload.ref }}
       - name: Create tar.gz
         run: |
-          echo ${{ steps.get_version.outputs.VERSION }}
-          echo ${{ github.event.client_payload.release.id }}
-          echo ${{ github.event.client_payload.release.upload_url }}
-          echo ${{ github.event.client_payload.release.html_url }}
+          echo "${{ steps.get_version.outputs.VERSION }}"
+          echo "${{ github.event.client_payload.release.id }}"
+          echo "${{ github.event.client_payload.release.upload_url }}"
+          echo "${{ github.event.client_payload.release.html_url }}"
+
+          FILE=semantic-release-test_v${{ steps.get_version.outputs.VERSION }}.tar.gz
+          tar --exclude=$FILE -czf $FILE .
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v2
+        with:
+          name: semantic-release-test
+          path: semantic-release-test_v${{ steps.get_version.outputs.VERSION }}.tar.gz
+          retention-days: 1
