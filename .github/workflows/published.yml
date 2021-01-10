@@ -28,6 +28,8 @@ jobs:
           echo "Version ${{ steps.get_version.outputs.VERSION }} was published."
           echo ${{ steps.get_release.outputs.id }}
 
+          jq --version
+
           URL="https://api.github.com/repos/rickbassham/semantic-release-test/releases/${{ steps.get_release.outputs.id }}"
           echo ${URL}
 
