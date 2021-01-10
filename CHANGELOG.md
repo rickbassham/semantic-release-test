@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rickbassham/semantic-release-test/compare/v1.1.1...v1.1.2) (2021-01-10)
+
+
+### Bug Fixes
+
+* back to a working state ([eac7cbb](https://github.com/rickbassham/semantic-release-test/commit/eac7cbb0134c215f137e49137778bed8a2e74068))
+
 ## [1.1.1](https://github.com/rickbassham/semantic-release-test/compare/v1.1.0...v1.1.1) (2021-01-10)
 
 
