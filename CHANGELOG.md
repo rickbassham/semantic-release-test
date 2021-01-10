@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/rickbassham/semantic-release-test/compare/v1.1.2...v1.2.0) (2021-01-10)
+
+
+### Features
+
+* publish release after adding assets ([4d75cc7](https://github.com/rickbassham/semantic-release-test/commit/4d75cc70cb2e3bfaf887076e7a05ac738bbb9446))
+
 ## [1.1.2](https://github.com/rickbassham/semantic-release-test/compare/v1.1.1...v1.1.2) (2021-01-10)
 
 
