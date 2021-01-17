@@ -1,3 +1,10 @@
+semantic-release-test (1.3.17) focal; urgency=medium
+
+  [ Rick Bassham ]
+  * fix: update gitignore f9a6e8a
+
+ -- Rick Bassham <brodrick.bassham@gmail.com> Sun, 17 Jan 2021 13:43:57 -0500
+
 semantic-release-test (1.3.16) focal; urgency=medium
 
   [ Rick Bassham ]
