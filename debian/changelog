@@ -1,3 +1,10 @@
+undefined (1.3.14) undefined; urgency=medium
+
+  [ Rick Bassham ]
+  * fix: update gitignore 44c1041
+
+ -- undefined Sun, 17 Jan 2021 01:37:57 -0500
+
 indi-celestron-cgx (1.3.13) focal; urgency=medium
 
   [ Rick Bassham ]
